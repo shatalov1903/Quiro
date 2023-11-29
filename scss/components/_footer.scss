@@ -3,11 +3,12 @@
 
   &__container {
     position: relative;
-    padding: 106rem 20rem 81rem 20rem;
+    padding: 106rem 20rem 81rem;
     display: grid;
     gap: 108rem;
     @include mobile {
       text-align: center;
+      padding: 60rem 20rem 90rem;
     }
 
     grid-template-columns: auto 1fr 1fr;

@@ -1,7 +1,7 @@
 html {
   font-size: var(--html-fs);
   @include mobile {
-    font-size: 0.7px;
+    font-size: var(--html-fs-mobile);
   }
 }
 
@@ -21,4 +21,27 @@ body {
   max-width: calc(1170rem + 40rem);
   padding: 20rem;
   margin-inline: auto;
+}
+
+.title {
+  margin-top: 111rem;
+  margin-bottom: 70rem;
+  color: var(--c-Paragraph);
+  font: var(--Heading-2);
+  text-align: center;
+  @include tablet {
+    margin-top: 75rem;
+  }
+}
+
+.desc {
+  color: var(--c-Paragraph);
+  font: var(--Paragraph);
+  max-width: 837rem;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 123rem;
+  @include tablet {
+    margin-bottom: 40rem;
+  }
 }

@@ -7,6 +7,7 @@ $mobile-small: 370px;
 
 :root {
   --html-fs: 1px;
+  --html-fs-mobile: 0.7px;
   --ff: "Work Sans", sans-serif;
   --transition: 0.2s all ease-in-out;
 
@@ -17,12 +18,14 @@ $mobile-small: 370px;
   --black: #000;
 
   --c-Paragraph: #262626;
+  --c-Text: #575757;
 
+  --Heading-2: 700 48rem / normal var(--ff);
   --Heading-3: 700 36rem / normal var(--ff);
   --Heading-4: 600 24rem / normal var(--ff);
   --Link: 400 16rem / normal var(--ff);
   --Paragraph: 400 16rem / normal var(--ff);
-
+  --Service: 600 16rem / normal var(--ff);
   --Input: 400 14rem / normal var(--ff);
   --Button: 600 20rem / normal var(--ff);
 }

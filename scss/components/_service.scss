@@ -1,0 +1,82 @@
+.service {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370rem, 1fr));
+    gap: 30rem;
+  }
+}
+
+.service-item {
+  text-align: center;
+  padding: 46rem 0 51rem 0;
+  border-radius: 15rem;
+  transition: var(--transition);
+  @include tablet-min {
+    &:hover {
+      background: var(--c-primary);
+    }
+    &:hover &__title,
+    &:hover &__desc,
+    &:hover span {
+      color: var(--c-text-white);
+    }
+    &:hover svg {
+      path {
+        fill: var(--c-text-white);
+      }
+    }
+  }
+  @include mobile {
+    padding: 20rem 0;
+  }
+
+  &__img {
+    margin-bottom: 27rem;
+    @include mobile {
+      width: 90rem;
+      height: 90rem;
+      margin-inline: auto;
+    }
+  }
+
+  &__title {
+    color: var(--c-Paragraph);
+    font: var(--Heading-4);
+    margin-bottom: 17rem;
+  }
+
+  &__desc {
+    color: var(--c-Text);
+    font: var(--Paragraph);
+    margin-inline: auto;
+    max-width: 318rem;
+    margin-bottom: 18rem;
+  }
+
+  &__a {
+    display: inline-flex;
+    gap: 2rem;
+    justify-content: center;
+
+    span {
+      color: var(--c-primary);
+      font: var(--Service);
+      text-decoration-line: underline;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    svg {
+      path {
+        transition: var(--transition);
+      }
+    }
+  }
+
+  &__title,
+  &__desc,
+  span {
+    transition: var(--transition);
+  }
+}

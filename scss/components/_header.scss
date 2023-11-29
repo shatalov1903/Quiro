@@ -64,6 +64,9 @@
       &::placeholder {
         color: var(--c-text-white);
       }
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
     }
   }
 
