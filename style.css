@@ -162,6 +162,7 @@ html._theme:root {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: var(--html-fs);
 }
 @media (max-width: 576px) {
@@ -241,17 +242,24 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: var(--c-text-white);
+}
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40rem 0 54rem 0;
+  padding: 40rem 20rem 54rem;
   gap: 10rem;
 }
 @media (max-width: 992px) {
-  .header {
+  .header__container {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-areas: "logo search" "menu . ";
+    padding: 40rem 20rem 15rem;
   }
 }
 .header__backdrop {

@@ -1,15 +1,23 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40rem 0 54rem 0;
-  gap: 10rem;
-  @include tablet {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas:
-      "logo search"
-      "menu . ";
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: var(--c-text-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40rem 20rem 54rem;
+    gap: 10rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-areas:
+        "logo search"
+        "menu . ";
+      padding: 40rem 20rem 15rem;
+    }
   }
 
   &__backdrop {

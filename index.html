@@ -21,25 +21,25 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <a href="/" class="header__logo">Quiro Diagnostic Center</a>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#carousel" class="header__logo">Quiro Diagnostic Center</a>
         <div class="header__nav">
           <ul class="header__ul" id="headerUl">
             <li class="header__li">
-              <a class="header__a _active" href="/">Home</a>
+              <a class="header__a _active" href="#carousel">Home</a>
             </li>
             <li class="header__li">
-              <a class="header__a" href="/">Service</a>
+              <a class="header__a" href="#servise">Service</a>
             </li>
             <li class="header__li">
-              <a class="header__a" href="/">Doctors</a>
+              <a class="header__a" href="#specialist">Doctors</a>
             </li>
             <li class="header__li">
-              <a class="header__a" href="/">Gallery</a>
+              <a class="header__a" href="#join">Gallery</a>
             </li>
             <li class="header__li">
-              <a class="header__a" href="/">Contact</a>
+              <a class="header__a" href="#footer">Contact</a>
             </li>
             <span class="material-icons light" onclick="themeToggle()"
               >light_mode</span
@@ -57,8 +57,10 @@
           <input type="search" placeholder="Search Here" />
           <span class="material-icons">search</span>
         </div>
-      </header>
-      <div class="owl-carousel owl-theme">
+      </div>
+    </header>
+    <div class="container">
+      <div class="owl-carousel owl-theme" id="carousel">
         <div class="carousel-img">
           <img src="./img/carousel1.png" alt="carousel" />
         </div>
@@ -69,7 +71,7 @@
           <img src="./img/carousel1.png" alt="carousel" />
         </div>
       </div>
-      <div class="service">
+      <div class="service" id="servise">
         <div class="title">Our Services</div>
         <div class="desc">
           Magnis facilisis tortor volutpat lobortis ac id. Libero enim nunc
@@ -195,7 +197,7 @@
           </div>
         </div>
       </div>
-      <div class="specialist">
+      <div class="specialist" id="specialist">
         <div class="title">Choose Your Specialist Doctor</div>
         <div class="desc">
           Magnis facilisis tortor volutpat lobortis ac id. Libero enim nunc
@@ -333,7 +335,7 @@
           </div>
         </div>
       </div>
-      <form class="join">
+      <form class="join" id="join">
         <div class="join__title">Join Our Newsletter</div>
         <div class="join__input">
           <input type="email" placeholder="Enter your email" />
@@ -344,8 +346,7 @@
         </div>
       </form>
     </div>
-
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__container">
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">Quiro Diagnostic Center</a>

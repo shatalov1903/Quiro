@@ -25,3 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.getElementById("html").classList.add("_theme");
 	}
 });
+
+

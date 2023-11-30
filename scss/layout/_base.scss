@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   font-size: var(--html-fs);
   @include mobile {
     font-size: var(--html-fs-mobile);
