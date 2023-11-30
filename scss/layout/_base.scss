@@ -48,6 +48,10 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
   border-radius: 50rem;
   background: var(--c-primary);
   padding: 10rem 49rem;

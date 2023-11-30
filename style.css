@@ -217,6 +217,10 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
   border-radius: 50rem;
   background: var(--c-primary);
   padding: 10rem 49rem;
@@ -251,7 +255,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40rem 20rem 54rem;
+  padding: 40rem 20rem 35rem;
   gap: 10rem;
 }
 @media (max-width: 992px) {
