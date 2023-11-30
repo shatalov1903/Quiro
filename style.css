@@ -144,6 +144,7 @@ ul {
   --c-text-white: #fff;
   --c-border: #eee;
   --black: #000;
+  --c-terciary: #f9f1fe;
   --c-Paragraph: #262626;
   --c-Text: #575757;
   --Heading-2: 700 48rem / normal var(--ff);
@@ -211,6 +212,20 @@ body {
 @media (max-width: 992px) {
   .desc {
     margin-bottom: 40rem;
+  }
+}
+
+.btn {
+  border-radius: 50rem;
+  background: var(--c-primary);
+  padding: 10rem 49rem;
+  color: var(--c-terciary);
+  font: var(--Button);
+  transition: var(--transition);
+}
+@media (min-width: 992px) {
+  .btn_primary:hover {
+    background: #975af2;
   }
 }
 
@@ -387,6 +402,7 @@ body {
   text-align: center;
   padding: 46rem 0 51rem 0;
   border-radius: 15rem;
+  background: var(--c-terciary);
   transition: var(--transition);
 }
 @media (min-width: 992px) {
@@ -450,6 +466,59 @@ body {
   transition: var(--transition);
 }
 
+.specialist__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30rem;
+}
+@media (max-width: 1200px) {
+  .specialist__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 785px) {
+  .specialist__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.specialist-item {
+  border-radius: 20rem;
+  background: var(--c-terciary);
+  padding: 44rem 38rem 33rem;
+}
+.specialist-item__header {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+  margin-bottom: 25rem;
+}
+.specialist-item__img {
+  flex-shrink: 0;
+  width: 63rem;
+  height: 63rem;
+}
+.specialist-item__img img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.specialist-item__name {
+  color: var(--c-Paragraph);
+  font: var(--Button);
+  margin-bottom: 3rem;
+}
+.specialist-item__role {
+  color: var(--c-Text);
+  font: var(--Paragraph);
+}
+.specialist-item__desc {
+  color: var(--c-Text);
+  font: var(--Paragraph);
+  margin-bottom: 38rem;
+}
+
 .join {
   margin-top: 129rem;
   margin-bottom: 131rem;
@@ -462,6 +531,11 @@ body {
 @media (max-width: 992px) {
   .join {
     margin-bottom: 31rem;
+  }
+}
+@media (max-width: 576px) {
+  .join {
+    margin-top: 70rem;
   }
 }
 .join__title {
@@ -482,7 +556,7 @@ body {
   margin-inline: auto;
   border-radius: 50rem;
   background: #f9f1fe;
-  padding-right: 14px;
+  padding-right: 14rem;
 }
 .join__input button {
   border-radius: 22rem;
@@ -595,6 +669,12 @@ body {
 }
 .footer-info__value a {
   color: var(--c-Paragraph);
+  transition: var(--transition);
+}
+@media (min-width: 992px) {
+  .footer-info__value a:hover {
+    color: var(--c-primary);
+  }
 }
 
 .footer-hours__title {

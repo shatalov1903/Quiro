@@ -35,9 +35,6 @@
     color: #575757;
   }
 
-  &__col {
-  }
-
   &__logo {
     color: var(--c-Paragraph);
     font: var(--Heading-4);
@@ -70,6 +67,12 @@
 
     a {
       color: var(--c-Paragraph);
+      transition: var(--transition);
+      @include tablet-min {
+        &:hover {
+          color: var(--c-primary);
+        }
+      }
     }
   }
 }

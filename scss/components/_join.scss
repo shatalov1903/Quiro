@@ -9,6 +9,9 @@
   @include tablet {
     margin-bottom: 31rem;
   }
+  @include mobile {
+    margin-top: 70rem;
+  }
 
   &__title {
     font: var(--Heading-3);
@@ -27,7 +30,7 @@
     margin-inline: auto;
     border-radius: 50rem;
     background: #f9f1fe;
-    padding-right: 14px;
+    padding-right: 14rem;
 
     button {
       border-radius: 22rem;

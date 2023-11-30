@@ -1,0 +1,55 @@
+.specialist {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30rem;
+    @include desktop-small {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include tablet-small {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+.specialist-item {
+  border-radius: 20rem;
+  background: var(--c-terciary);
+  padding: 44rem 38rem 33rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+    margin-bottom: 25rem;
+  }
+
+  &__img {
+    flex-shrink: 0;
+    width: 63rem;
+    height: 63rem;
+
+    img {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    color: var(--c-Paragraph);
+    font: var(--Button);
+    margin-bottom: 3rem;
+  }
+
+  &__role {
+    color: var(--c-Text);
+    font: var(--Paragraph);
+  }
+
+  &__desc {
+    color: var(--c-Text);
+    font: var(--Paragraph);
+    margin-bottom: 38rem;
+  }
+}

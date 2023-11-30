@@ -1,9 +1,11 @@
 // breakpoints
 $desktop-small: 1200px;
 $tablet: 992px;
-$tablet-small: 768px;
+$tablet-small: 785px;
 $mobile: 576px;
 $mobile-small: 370px;
+
+$c-primary: #8842f0;
 
 :root {
   --html-fs: 1px;
@@ -16,7 +18,7 @@ $mobile-small: 370px;
   --c-border: #eee;
 
   --black: #000;
-
+  --c-terciary: #f9f1fe;
   --c-Paragraph: #262626;
   --c-Text: #575757;
 

@@ -45,3 +45,20 @@ body {
     margin-bottom: 40rem;
   }
 }
+
+.btn {
+  border-radius: 50rem;
+  background: var(--c-primary);
+  padding: 10rem 49rem;
+  color: var(--c-terciary);
+  font: var(--Button);
+  transition: var(--transition);
+
+  &_primary {
+    @include tablet-min {
+      &:hover {
+        background: lighten($c-primary, 5%);
+      }
+    }
+  }
+}
