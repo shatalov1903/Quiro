@@ -110,7 +110,7 @@
       position: absolute;
       top: 40rem;
       right: 40rem;
-      color: var(--c-text-white);
+      color: var(--black);
     }
   }
 
@@ -147,10 +147,6 @@
         color: var(--c-primary);
       }
     }
-
-    @include tablet {
-      color: var(--c-text-white);
-    }
   }
 }
 
@@ -170,4 +166,8 @@
 
 .light {
   cursor: pointer;
+  color: var(--black);
+  @include tablet-min {
+    color: var(--c-primary);
+  }
 }

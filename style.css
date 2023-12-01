@@ -350,7 +350,7 @@ body {
   position: absolute;
   top: 40rem;
   right: 40rem;
-  color: var(--c-text-white);
+  color: var(--black);
 }
 .header__a {
   color: var(--black);
@@ -378,11 +378,6 @@ body {
     color: var(--c-primary);
   }
 }
-@media (max-width: 992px) {
-  .header__a {
-    color: var(--c-text-white);
-  }
-}
 
 .icon-menu,
 .icon-close {
@@ -402,6 +397,12 @@ body {
 
 .light {
   cursor: pointer;
+  color: var(--black);
+}
+@media (min-width: 992px) {
+  .light {
+    color: var(--c-primary);
+  }
 }
 
 .service__list {
