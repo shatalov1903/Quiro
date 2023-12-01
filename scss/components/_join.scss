@@ -34,14 +34,8 @@
 
     button {
       border-radius: 22rem;
-      background: var(--c-primary);
       padding: 11rem 25rem;
-      font: var(--Button);
       color: var(--c-text-white);
-      cursor: pointer;
-      display: inline-block;
-      border: 0;
-      outline: 0;
 
       .material-icons {
         display: none;
