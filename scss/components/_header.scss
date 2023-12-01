@@ -14,8 +14,8 @@
       display: grid;
       grid-template-columns: repeat(2, auto);
       grid-template-areas:
-        "logo search"
-        "menu . ";
+        "logo menu"
+        "search search";
       padding: 40rem 20rem 15rem;
     }
   }
