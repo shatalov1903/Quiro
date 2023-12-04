@@ -47,6 +47,9 @@
     position: relative;
     max-width: 278rem;
     width: 100%;
+    @include mobile-small {
+      max-width: 100%;
+    }
 
     .material-icons {
       position: absolute;

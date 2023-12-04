@@ -293,6 +293,11 @@ body {
   max-width: 278rem;
   width: 100%;
 }
+@media (max-width: 370px) {
+  .header__search {
+    max-width: 100%;
+  }
+}
 .header__search .material-icons {
   position: absolute;
   right: 15rem;
